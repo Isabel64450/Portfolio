@@ -1,15 +1,35 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import Button from '../components/Button'
-import {Menu} from "lucide-react"
+import {Menu , X} from "lucide-react"
 
-const Navbar = () => {
-    const navLinks = [
+
+ const navLinks = [
         {href: "#about" , label: "About"},
          {href: "#projects" , label: "Project"},
           {href: "#experience" , label: "Experience"},
            {href: "#testimonials" , label: "Testimonials"}
 
     ]
+
+const Navbar = () => {
+         const [isMobileMenuOpen , setIsMobileMenuOpen] = useState(false);
+         const [isScrolled, setIsScrolled] = useState(false);
+          const scrollToContact = () => {
+      document.querySelector("#contact")?.scrollIntoView({ 
+        behavior: "smooth" 
+      });
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+           setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => 
+            window.removeEventListener("scroll", handleScroll);
+        }, []);
+   
   return (
    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
              
@@ -28,12 +48,41 @@ const Navbar = () => {
 
                      </div>
 
-                <button className='md:hidden p-2 text-foreground'>
-                    <Menu/>
+                <button className='md:hidden p-2 text-foreground cursor-pointer' onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
+                    {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
            </div>
 
       </nav>
+
+        {isMobileMenuOpen && (
+          <div className="md:hidden glass-strong animate-fade-in">
+            <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+                {navLinks.map((link, index) => (
+                    <a
+                        key={index}
+                        href={link.href}
+                        className="text-lg text-muted-foreground hover:text-foreground py-2"
+                        
+                    >
+                        {link.label}
+                    </a>
+                ))}
+                <Button className='px-4 py-2 text-white rounded'
+                  href="#contact"
+                  
+                >
+                    Contactez-moi
+                </Button>
+            </div>
+          </div>
+        )}
+
+
+
+
+
+
    </header>
   )
 }

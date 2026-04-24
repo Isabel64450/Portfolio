@@ -6,6 +6,7 @@ import Contact from '@/sections/Contact'
 import Testimonial from '@/sections/Testimonial'
 import About from '@/sections/About'
 import Navbar from '@/layout/Navbar'
+import Footer from './layout/Footer'
 
 function App() {
   return (
@@ -13,11 +14,14 @@ function App() {
       <Navbar/>
       <main>
           <Hero/>
-          <Experience/>
-          <Projects/>
-          <Contact/>
-          <Testimonial/>
           <About/>
+          
+          <Projects/>
+          <Experience/>
+          
+          <Testimonial/>
+          <Contact/>
+          <Footer/>
       </main>
     </div>
   )

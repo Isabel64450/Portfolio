@@ -49,7 +49,7 @@ const experiences = [
                                      text-secondary-foreground"
             >
               Expérience/Formation{" "}
-              <span className="font-serif italic font-normal text-white">
+              <span className="font-serif italic font-normal text-[#EDAFB8]">
                 {" "}
                 pertinentes
               </span>

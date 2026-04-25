@@ -7,8 +7,8 @@ import {Menu , X} from "lucide-react"
         {href: "#about" , label: "About"},
          {href: "#projects" , label: "Project"},
           {href: "#experience" , label: "Experience"},
-           {href: "#testimonials" , label: "Testimonials"}
-
+           {href: "#testimonials" , label: "Testimonials"},
+              { href: "#contact", label: "Contact" }
     ]
 
 const Navbar = () => {
@@ -31,15 +31,15 @@ const Navbar = () => {
         }, []);
    
   return (
-   <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+   <header className="fixed top-0 left-0 w-full bg-[#F7E1D7] shadow-md z-50">
              
       <nav  className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-        <a className="text-xl font-bold text-gray-800" >Portfolio <span></span></a>
+        <a href='#' className="text-xl font-bold text-gray-800" >Portfolio <span></span></a>
            <div className='hidden md:flex items-center gap-1'>
             
                <div className="flex gap-6">
-                   {navLinks.map((link, index)=>( <a key = {index} href={link.label} className="text-gray-600 hover:text-black transition duration-200">{link.label}</a>)
+                   {navLinks.map((link, index)=>( <a key = {index} href={link.href} className="text-gray-600 hover:text-black transition duration-200">{link.label}</a>)
                    
                    )}
                </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     <a
                         key={index}
                         href={link.href}
-                        className="text-lg text-muted-foreground hover:text-foreground py-2"
+                        className="text-[#4A5759] hover:text-[#B0C4B1] transition duration-200 font-medium"
                         
                     >
                         {link.label}

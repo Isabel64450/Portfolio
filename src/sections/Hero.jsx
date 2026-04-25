@@ -52,7 +52,7 @@ const Hero = () => {
               key={index}
               className="absolute w-5 h-5 rotate-45 opacity-50"
               style={{
-                backgroundColor: "#0a970a",
+                backgroundColor: "#B0C4B1",
                 top: pos.top,
                 left: pos.left,
                 animation: `slow-drift ${pos.animationDuration} ease-in-out infinite`,
@@ -75,17 +75,16 @@ const Hero = () => {
            
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                  Développeur{" "}
-                  <span className="text-primary glow-text">Fullstack</span>
-                  <br />
-                  passionné par le code
-                  <br />
-                  <span className="font-serif italic font-normal text-white">
+                  Développeuse et conceptrice d’applications, orientée data{" "}
+                  <span className="text-primary glow-text">Fullstack </span>
+                  
+                  <span className="font-serif italic font-normal text-[#EDAFB8]">
                     et les défis web.
                   </span>
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-600">
-                  Bonjour, je suis Maria conçois, développe.
+                  Développeuse web ful-stack, passionnée par la data et les nouveles technologies, je suis
+                  actuelement en formation Concepteur Développeur d’Applications (CDA).
                 </p>
               </div>
             
@@ -93,7 +92,7 @@ const Hero = () => {
                 <Button
                   href="#contact"
                   size="lg"
-                  className="animate-fade-in animation-delay-800"
+                  className="animate-fade-in animation-delay-800 rounded-full"
                 >
                   Contactez-moi <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -113,7 +112,7 @@ const Hero = () => {
                     icon: FaLinkedin,
                     href: "https://www.linkedin.com/in/maria-dumas",
                   },
-                  { icon: FaXTwitter, href: "#" },
+               
                 ].map((social, i) => (
                   <a
                     key={i}
@@ -143,7 +142,7 @@ const Hero = () => {
                  
                   <div className="absolute -bottom-10 -right-4 glass rounded-xl px-4 py-3 animate-float">
                     <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                      <div className="w-3 h-3 bg-[#B0C4B1] rounded-full animate-pulse" />
                       <span className="text-sm font-medium">
                         Disponible pour de nouvelles opportunités
                       </span>

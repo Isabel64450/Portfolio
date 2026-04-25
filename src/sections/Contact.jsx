@@ -7,14 +7,14 @@ const contactInfo = [
     {
         icon: Mail,
         label: "Email",
-        value: "isa.dumas64@gmail.com",
-        href: "mailto:isa.dumas64@gmail.com"
+        value: "mariaisabelvillcafuentes@gmail.com",
+        href: "mailto:mariaisabelvillcafuentes@gmail.com"
     },
       {
         icon: Phone,
         label: "Tèl",
-        value: "+33 6 18603368",
-        href: "tel:+33618603368"
+        value: "+33 6 666666666",
+        href: "tel:+3366666666"
     },
       {
         icon: MapPin,
@@ -88,7 +88,7 @@ const Contact = () => {
             </span>
             <h2 className="text-4-xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-200">
               un projet,{" "}
-              <span className="font-serif italic font-normal text-white">
+              <span className="font-serif italic font-normal text-[#EDAFB8]">
                 ecrivons la suite ensemble !
               </span>
             </h2>
@@ -161,7 +161,7 @@ const Contact = () => {
                   />
                 </div>
                 <Button
-                  className="w-full"
+                  className="w-full rounded-full"
                   type="submit"
                   size="lg"
                   disabled={isLoading}
@@ -194,7 +194,7 @@ const Contact = () => {
                 )}
               </form>
             </div>
-            {/*Info contact*/}
+         
             <div className="space-y-6 animate-fade-in animation-delay-400">
               <div className="glass rounded-3xl p-8">
                 <h3 className="text-xl font-semibold mb-6">
@@ -223,7 +223,7 @@ const Contact = () => {
               
               <div className="glass rounded-3xl p-8 border border-primary/30">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                    <span className="w-3 h-3 bg-[#B0C4B1] rounded-full animate-pulse"/>
                     <span className="font-medium">Actuellement disponible</span>
                   </div>
                   <p className="text-muted-foreground text-sm">

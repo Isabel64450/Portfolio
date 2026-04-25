@@ -47,25 +47,26 @@ const highlights = [
                                         animation-delay-100 text-secondary-foreground"
               >
                 Construisons le futur,
-                <span className="font-serif italic font-normal text-white">
+                <span className="font-serif italic font-normal text-[#EDAFB8]">
                   {" "}
                   un composant, un projet à la fois.
                 </span>
               </h2>
               <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+                
                 <p>
-               
+                 Conceptrice d’applications capable de modéliser des architectures logicielles (MVC),
+                 de réaliser des maquettes avec Figma et de participer à la conception fonctionnelle de projets digitaux.
                 </p>
                 <p>
-              
-                </p>
-                <p>
-             
+                 Développeuse web et mobile spécialisée en développement fullstack,
+                 avec maîtrise de PHP/Symfony, React, React Native, Node.js et la création d’API et de bases de données.
                 </p>
               </div>
               <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                 <p className="text-lg font-medium italic text-foreground">
-              
+                     Data scientist formée à l’analyse, la visualisation et au machine learning avec Python, Pandas et Scikit-learn,
+                      pour exploiter et valoriser les données.
                 </p>
               </div>
             </div>

@@ -12,52 +12,52 @@ const projects = [
     image: "/projectImg/portfolio.png",
     tags: ["React", "Tailwind CSS"],
     link: "#",
-    FaGithub: "https://FaGithub.com/Isabel64450/Portfolio",
+    FaGithub: "https://github.com/Isabel64450/Portfolio",
   },
   {
     title: "Izaberu Creations",
     description:
       "Site de vente online pour une artiste de ventes des acuarelles sur papier, avec gestion des stocks et paiements sécurisés, ainsi qu'une grosse partie admin et gestion des commerciaux",
     image: "/projectImg/chamborelle.png",
-    tags: ["PHP", "Symfony ,CSS"],
+    tags: ["JavaScript", "React ,Tailwind","Sql"],
     link: "https://izaberu-créations.fr/",
     FaGithub: "Private Repository",
   },
   {
     title: "Email Analyzer",
     description:
-      "Un jeu d'échec en ligne avec une interface utilisateur interactive, des fonctionnalités de jeu en temps réel et un système de classement des joueurs.",
+      "Projet développé lors de mon stage de fin d’études en développement web, basé sur une architecture hexagonale. Mise en place d’un webhook pour analyser des emails et détecter les tentatives de phishing grâce à un système de scoring basé sur plusieurs critères. Les emails jugés suspects sont automatiquement stockés en base de données afin de faciliter leur suivi et leur analyse.",
     image: "/projectImg/chassGame.png",
-    tags: ["Html", "TypeScript,CSS, estructure hexagonel "],
+    tags: ["Html", "TypeScript,CSS, architecture hexagonale "],
     link: "#",
-    FaGithub: "https://FaGithub.com/Isabel64450/EmailAnalyzer",
+    FaGithub: "https://github.com/Isabel64450/EmailAnalyzer",
   },
   {
-    title: "Créas de Lynca",
+    title: "Implémentez une modele de scoring",
     description:
-      "Site e-commerce pour une créatrice de bijoux artisanaux, avec une boutique en ligne conviviale, un système de paiement sécurisé et une gestion des stocks efficace.",
+      "Projet de data science centré sur l’analyse de données bancaires anonymisées afin de construire un modèle de scoring de crédit. L’objectif était de prédire le risque client et d’aider à la décision d’octroi de prêt grâce à des techniques de machine learning. Ce projet met en avant mes compétences en traitement de données, modélisation et interprétation des résultats.",
     image: "/projectImg/creasLynca.png",
-    tags: ["Php", "Javascript ,CSS, Wordpress"],
-    link: "https://lescreasdelynca.fr/",
-    FaGithub: "Private Repository",
+    tags: ["Python", "Pandas", "Scikit-learn", "Machine Learning", "Imbalanced Data"],
+    link: "#",
+    FaGithub: "https://github.com/Isabel64450/Project7",
   },
   {
-    title: "PacMan",
+    title: "Gestion d’événements",
     description:
-      "Un jeu PacMan en ligne avec des graphismes rétro, des niveaux stimulants et une jouabilité fluide pour une expérience de jeu nostalgique.",
+      "Projet réalisé dans le cadre de ma formation de développeuse web, consistant à récupérer des événements via une API. L’application permet ensuite de sélectionner et gérer ces événements afin de les ajouter à un agenda personnel. Ce projet met en œuvre la gestion des données, les appels API et l’interaction utilisateur.",
     image: "/projectImg/pacMan.png",
-    tags: ["Html canvas", "Javascript ,CSS"],
+    tags: ["Html", "Javascript ,CSS"],
     link: "#",
-    FaGithub: "https://FaGithub.com/devJeremie/Pac-Man-Project",
+    FaGithub: "https://github.com/Isabel64450/Project-ccp1",
   },
   {
-    title: "WashAndWork",
+    title: "Gestion des missions et des candidatures bénévoles",
     description:
-      "Site de nettoyage automobile avec réservation en ligne, gestion des services et des horaires, et options de paiement sécurisées.",
+      "Application permettant aux associations de publier des missions et aux bénévoles de candidater en ligne. Le système intègre une gestion des rôles ainsi que des mécanismes de validation des candidatures. Ce projet met en œuvre la gestion des utilisateurs, des permissions et des flux de validation.",
     image: "/projectImg/washandwork.png",
-    tags: ["Php", "Javascript ,CSS, wordpress"],
+    tags: ["HTML", "Javascript ,CSS"],
     link: "#",
-    FaGithub: "https://washandwork.pro/",
+    FaGithub: "https://github.com/Isabel64450/Gestion-des-missions-et-des-candidatures",
   },
 ];
 
@@ -81,7 +81,7 @@ const Projects = () => {
                                 text-secondary-foreground"
             >
               Projets
-              <span className="font-serif italic font-normal text-white">
+              <span className="font-serif italic font-normal text-[#EDAFB8]">
                 {" "}
                 qui font la différence
               </span>

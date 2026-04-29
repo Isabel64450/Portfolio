@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Très à l’écoute, il a développé un site web e-commerce responsive, avec une structure scalable et maintenable. On peut facilement faire évoluer le site dans le temps et suivre ses améliorations.",
+      "Très à l’écoute, elle a développé un site web e-commerce responsive, avec une structure scalable et maintenable. On peut facilement faire évoluer le site dans le temps et suivre ses améliorations.",
     author: "Izaberu Creations.",
     role: "Créatrice indépendante, Izaberu Creations",
     avatar:

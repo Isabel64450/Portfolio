@@ -34,6 +34,11 @@ const positions = [...Array(20)].map(() => ({
 }));
 
 const Hero = () => {
+       const scrollToContact = () => {
+         document.querySelector("#contact")?.scrollIntoView({
+          behavior: "smooth"
+        });
+};
   return (
      <section className="relative min-h-screen flex items-center overflow-hidden">
         
@@ -90,13 +95,13 @@ const Hero = () => {
             
               <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                 <Button
-                  href="#contact"
+                  onClick={scrollToContact}
                   size="lg"
                   className="animate-fade-in animation-delay-800 rounded-full"
                 >
                   Contactez-moi <ArrowRight className="w-5 h-5" />
                 </Button>
-                <AnimatedBorderButton>
+                <AnimatedBorderButton onClick={() => window.open("/cv.pdf", "_blank")}>
                   <Download className="w-5 h-5"/>
                   Download CV
                 </AnimatedBorderButton>

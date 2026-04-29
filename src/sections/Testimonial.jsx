@@ -1,10 +1,132 @@
-import React from 'react'
+import {useState} from 'react'
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+
+const testimonials = [
+  {
+    quote:
+      "Très à l’écoute, il a développé un site web e-commerce responsive, avec une structure scalable et maintenable. On peut facilement faire évoluer le site dans le temps et suivre ses améliorations.",
+    author: "Izaberu Creations.",
+    role: "Créatrice indépendante, Izaberu Creations",
+    avatar:
+      "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+  }  
+  ,{
+    quote:
+      "Un grand merci pour ce site qui a été d’une grande aide pour notre association. Il nous permet de centraliser les informations des fraternités et de mieux organiser nos événements. C’est un outil clair, pratique et essentiel pour notre communication.",
+    author: "Alisson V.",
+    role: "Trésorier adjoint de lassociation",
+    avatar:
+    "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+        },
+  {
+    quote:
+      "Fiable, créatif et orienté résultats. A livré plusieurs e-boutiques performantes et sites vitrines.",
+    author: "Sophie R.",
+    role: "Product Owner, ClimbKode",
+    avatar:
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+
+      
+  },
+  
+];
 
 const Testimonial = () => {
+   const [ activeId, setActiveId] = useState(0);
+
+  const next = () => {
+    setActiveId((prev) => (prev + 1) % testimonials.length);
+  }
+  
+  const previous = () => {
+    setActiveId((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
   return (
-    <div>
-      
-    </div>
+    <section id="testimonials" className="py-32 relative overflow-hidden">
+        <div
+          className="absolute top-1/2 left-1/2 w-[800px] h-[800px]
+                            bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+        />
+        <div className="container mx-auto px-6 relative z-10">
+         
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
+              Ce qu'ils disent de moi
+            </span>
+            <h2
+              className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in 
+                                   animation-delay-100 text-secondary-foreground"
+            >
+              Des témoignages de{" "}
+              <span className="font-serif italic font-normal text-[#EDAFB8]">
+                clients et Formateurs
+              </span>
+            </h2>
+          </div>
+         
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+             
+              <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
+                <div
+                  className="absolute -top-4 left-8 w-12 h-12 rounded-full
+                              bg-primary flex items-center justify-center"
+                >
+                  <Quote className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
+                  "{testimonials[activeId].quote}"
+                </blockquote>
+                <div className="flex items-center gap-4">
+                  <img
+                    src={testimonials[activeId].avatar}
+                    alt={testimonials[activeId].avatar}
+                    className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
+                  />
+                  <div>
+                    <div className="font-semibold">
+                      {testimonials[activeId].author}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonials[activeId].role}
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div className="flex items-center justify-center gap-4 mt-8">
+                <button
+                  className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary 
+                                   transition-all"
+                  onClick={previous}
+                >
+                  <ChevronLeft />
+                </button>
+                <div className="flex gap-2">
+                  {testimonials.map((_, id) => (
+                    <button
+                      key={id}
+                      onClick={() => setActiveId(id)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        id === activeId
+                          ? "w-8 bg-primary"
+                          : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <button
+                  className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary 
+                                   transition-all"
+                  onClick={next}
+                >
+                  <ChevronRight />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   )
 }
 

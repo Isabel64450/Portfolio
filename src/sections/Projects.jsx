@@ -6,19 +6,19 @@ import  AnimatedBorderButton from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Portfolio",
+    title: "Tkss France",
     description:
-      "Un portfolio personnel pour présenter mes projets et compétences.",
-    image: "/projectImg/portfolio.png",
-    tags: ["React", "Tailwind CSS"],
+      "Tinkus San Simón France est une association de danse traditionnelle bolivienne basée en France.",
+    image: "/projectImages/tkss France.jpg",
+    tags: ["PHP Symfony", "Tailwind CSS"],
     link: "#",
-    FaGithub: "https://github.com/Isabel64450/Portfolio",
+    FaGithub: "https://github.com/Isabel64450/TkssFrance",
   },
   {
     title: "Izaberu Creations",
     description:
       "Site de vente online pour une artiste de ventes des acuarelles sur papier, avec gestion des stocks et paiements sécurisés, ainsi qu'une grosse partie admin et gestion des commerciaux",
-    image: "/projectImg/chamborelle.png",
+    image: "/projectImages/izaberu creations.jpg",
     tags: ["JavaScript", "React ,Tailwind","Sql"],
     link: "https://izaberu-créations.fr/",
     FaGithub: "Private Repository",
@@ -27,7 +27,7 @@ const projects = [
     title: "Email Analyzer",
     description:
       "Projet développé lors de mon stage de fin d’études en développement web, basé sur une architecture hexagonale. Mise en place d’un webhook pour analyser des emails et détecter les tentatives de phishing grâce à un système de scoring basé sur plusieurs critères. Les emails jugés suspects sont automatiquement stockés en base de données afin de faciliter leur suivi et leur analyse.",
-    image: "/projectImg/chassGame.png",
+    image: "/projectImages/emailAnalyzer.jpg",
     tags: ["Html", "TypeScript,CSS, architecture hexagonale "],
     link: "#",
     FaGithub: "https://github.com/Isabel64450/EmailAnalyzer",
@@ -36,7 +36,7 @@ const projects = [
     title: "Implémentez une modele de scoring",
     description:
       "Projet de data science centré sur l’analyse de données bancaires anonymisées afin de construire un modèle de scoring de crédit. L’objectif était de prédire le risque client et d’aider à la décision d’octroi de prêt grâce à des techniques de machine learning. Ce projet met en avant mes compétences en traitement de données, modélisation et interprétation des résultats.",
-    image: "/projectImg/creasLynca.png",
+    image: "/projectImages",
     tags: ["Python", "Pandas", "Scikit-learn", "Machine Learning", "Imbalanced Data"],
     link: "#",
     FaGithub: "https://github.com/Isabel64450/Project7",
@@ -45,8 +45,8 @@ const projects = [
     title: "Gestion d’événements",
     description:
       "Projet réalisé dans le cadre de ma formation de développeuse web, consistant à récupérer des événements via une API. L’application permet ensuite de sélectionner et gérer ces événements afin de les ajouter à un agenda personnel. Ce projet met en œuvre la gestion des données, les appels API et l’interaction utilisateur.",
-    image: "/projectImg/pacMan.png",
-    tags: ["Html", "Javascript ,CSS"],
+    image: "/projectImages/ccp1.jpg",
+    tags: ["HTML", "Javascript", "Css"],
     link: "#",
     FaGithub: "https://github.com/Isabel64450/Project-ccp1",
   },
@@ -54,8 +54,8 @@ const projects = [
     title: "Gestion des missions et des candidatures bénévoles",
     description:
       "Application permettant aux associations de publier des missions et aux bénévoles de candidater en ligne. Le système intègre une gestion des rôles ainsi que des mécanismes de validation des candidatures. Ce projet met en œuvre la gestion des utilisateurs, des permissions et des flux de validation.",
-    image: "/projectImg/washandwork.png",
-    tags: ["HTML", "Javascript ,CSS"],
+    image: "/projectImages/ccp2.png",
+    tags: ["Postman", "Javascript" ,"Nodejs"],
     link: "#",
     FaGithub: "https://github.com/Isabel64450/Gestion-des-missions-et-des-candidatures",
   },

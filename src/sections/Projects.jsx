@@ -36,7 +36,7 @@ const projects = [
     title: "Implémentez une modele de scoring",
     description:
       "Projet de data science centré sur l’analyse de données bancaires anonymisées afin de construire un modèle de scoring de crédit. L’objectif était de prédire le risque client et d’aider à la décision d’octroi de prêt grâce à des techniques de machine learning. Ce projet met en avant mes compétences en traitement de données, modélisation et interprétation des résultats.",
-    image: "/projectImages",
+    image: "/projectImages/scoring.jpg",
     tags: ["Python", "Pandas", "Scikit-learn", "Machine Learning", "Imbalanced Data"],
     link: "#",
     FaGithub: "https://github.com/Isabel64450/Project7",

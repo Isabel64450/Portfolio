@@ -46,7 +46,7 @@ const Navbar = () => {
                    )}
                </div>
                     
-                         <Button size='sm' className=" px-4 py-2 text-white rounded" onClick={scrollToContact}>Contactez-moi</Button>
+                         <Button size='sm' className=" px-4 py-2 text-[#B0C4B1] rounded" onClick={scrollToContact}>Contactez-moi</Button>
                 </div>
                 <button className='md:hidden p-2 text-foreground cursor-pointer' onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

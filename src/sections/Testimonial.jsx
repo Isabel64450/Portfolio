@@ -18,16 +18,6 @@ const testimonials = [
     avatar:
     "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBvcnRyYWl0fGVufDB8fDB8fHww",
         },
-  {
-    quote:
-      "Fiable, créatif et orienté résultats. A livré plusieurs e-boutiques performantes et sites vitrines.",
-    author: "Sophie R.",
-    role: "Product Owner, ClimbKode",
-    avatar:
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
-
-      
-  },
   
 ];
 
